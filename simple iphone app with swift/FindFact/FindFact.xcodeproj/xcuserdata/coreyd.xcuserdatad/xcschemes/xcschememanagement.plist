@@ -4,7 +4,7 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>FunFact.xcscheme</key>
+		<key>FindFact.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
@@ -12,12 +12,12 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>02E835BA1B5C6A9B00180BDE</key>
+		<key>02E835E81B5C6AC100180BDE</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>02E835CF1B5C6A9B00180BDE</key>
+		<key>02E835FD1B5C6AC100180BDE</key>
 		<dict>
 			<key>primary</key>
 			<true/>

@@ -7,46 +7,46 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		02E835C11B5C6A9B00180BDE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E835C01B5C6A9B00180BDE /* AppDelegate.swift */; };
-		02E835C31B5C6A9B00180BDE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E835C21B5C6A9B00180BDE /* ViewController.swift */; };
-		02E835C61B5C6A9B00180BDE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 02E835C41B5C6A9B00180BDE /* Main.storyboard */; };
-		02E835C81B5C6A9B00180BDE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 02E835C71B5C6A9B00180BDE /* Images.xcassets */; };
-		02E835CB1B5C6A9B00180BDE /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 02E835C91B5C6A9B00180BDE /* LaunchScreen.xib */; };
-		02E835D71B5C6A9B00180BDE /* FunFactTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E835D61B5C6A9B00180BDE /* FunFactTests.swift */; };
+		02E835EF1B5C6AC100180BDE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E835EE1B5C6AC100180BDE /* AppDelegate.swift */; };
+		02E835F11B5C6AC100180BDE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E835F01B5C6AC100180BDE /* ViewController.swift */; };
+		02E835F41B5C6AC100180BDE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 02E835F21B5C6AC100180BDE /* Main.storyboard */; };
+		02E835F61B5C6AC100180BDE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 02E835F51B5C6AC100180BDE /* Images.xcassets */; };
+		02E835F91B5C6AC100180BDE /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 02E835F71B5C6AC100180BDE /* LaunchScreen.xib */; };
+		02E836051B5C6AC100180BDE /* FindFactTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E836041B5C6AC100180BDE /* FindFactTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		02E835D11B5C6A9B00180BDE /* PBXContainerItemProxy */ = {
+		02E835FF1B5C6AC100180BDE /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 02E835B31B5C6A9B00180BDE /* Project object */;
+			containerPortal = 02E835E11B5C6AC100180BDE /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 02E835BA1B5C6A9B00180BDE;
-			remoteInfo = FunFact;
+			remoteGlobalIDString = 02E835E81B5C6AC100180BDE;
+			remoteInfo = FindFact;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		02E835BB1B5C6A9B00180BDE /* FunFact.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FunFact.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		02E835BF1B5C6A9B00180BDE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		02E835C01B5C6A9B00180BDE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		02E835C21B5C6A9B00180BDE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		02E835C51B5C6A9B00180BDE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		02E835C71B5C6A9B00180BDE /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		02E835CA1B5C6A9B00180BDE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		02E835D01B5C6A9B00180BDE /* FunFactTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FunFactTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		02E835D51B5C6A9B00180BDE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		02E835D61B5C6A9B00180BDE /* FunFactTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FunFactTests.swift; sourceTree = "<group>"; };
+		02E835E91B5C6AC100180BDE /* FindFact.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FindFact.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		02E835ED1B5C6AC100180BDE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		02E835EE1B5C6AC100180BDE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		02E835F01B5C6AC100180BDE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		02E835F31B5C6AC100180BDE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		02E835F51B5C6AC100180BDE /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		02E835F81B5C6AC100180BDE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		02E835FE1B5C6AC100180BDE /* FindFactTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FindFactTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		02E836031B5C6AC100180BDE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		02E836041B5C6AC100180BDE /* FindFactTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindFactTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		02E835B81B5C6A9B00180BDE /* Frameworks */ = {
+		02E835E61B5C6AC100180BDE /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		02E835CD1B5C6A9B00180BDE /* Frameworks */ = {
+		02E835FB1B5C6AC100180BDE /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -56,58 +56,58 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		02E835B21B5C6A9B00180BDE = {
+		02E835E01B5C6AC100180BDE = {
 			isa = PBXGroup;
 			children = (
-				02E835BD1B5C6A9B00180BDE /* FunFact */,
-				02E835D31B5C6A9B00180BDE /* FunFactTests */,
-				02E835BC1B5C6A9B00180BDE /* Products */,
+				02E835EB1B5C6AC100180BDE /* FindFact */,
+				02E836011B5C6AC100180BDE /* FindFactTests */,
+				02E835EA1B5C6AC100180BDE /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		02E835BC1B5C6A9B00180BDE /* Products */ = {
+		02E835EA1B5C6AC100180BDE /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				02E835BB1B5C6A9B00180BDE /* FunFact.app */,
-				02E835D01B5C6A9B00180BDE /* FunFactTests.xctest */,
+				02E835E91B5C6AC100180BDE /* FindFact.app */,
+				02E835FE1B5C6AC100180BDE /* FindFactTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		02E835BD1B5C6A9B00180BDE /* FunFact */ = {
+		02E835EB1B5C6AC100180BDE /* FindFact */ = {
 			isa = PBXGroup;
 			children = (
-				02E835C01B5C6A9B00180BDE /* AppDelegate.swift */,
-				02E835C21B5C6A9B00180BDE /* ViewController.swift */,
-				02E835C41B5C6A9B00180BDE /* Main.storyboard */,
-				02E835C71B5C6A9B00180BDE /* Images.xcassets */,
-				02E835C91B5C6A9B00180BDE /* LaunchScreen.xib */,
-				02E835BE1B5C6A9B00180BDE /* Supporting Files */,
+				02E835EE1B5C6AC100180BDE /* AppDelegate.swift */,
+				02E835F01B5C6AC100180BDE /* ViewController.swift */,
+				02E835F21B5C6AC100180BDE /* Main.storyboard */,
+				02E835F51B5C6AC100180BDE /* Images.xcassets */,
+				02E835F71B5C6AC100180BDE /* LaunchScreen.xib */,
+				02E835EC1B5C6AC100180BDE /* Supporting Files */,
 			);
-			path = FunFact;
+			path = FindFact;
 			sourceTree = "<group>";
 		};
-		02E835BE1B5C6A9B00180BDE /* Supporting Files */ = {
+		02E835EC1B5C6AC100180BDE /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				02E835BF1B5C6A9B00180BDE /* Info.plist */,
+				02E835ED1B5C6AC100180BDE /* Info.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		02E835D31B5C6A9B00180BDE /* FunFactTests */ = {
+		02E836011B5C6AC100180BDE /* FindFactTests */ = {
 			isa = PBXGroup;
 			children = (
-				02E835D61B5C6A9B00180BDE /* FunFactTests.swift */,
-				02E835D41B5C6A9B00180BDE /* Supporting Files */,
+				02E836041B5C6AC100180BDE /* FindFactTests.swift */,
+				02E836021B5C6AC100180BDE /* Supporting Files */,
 			);
-			path = FunFactTests;
+			path = FindFactTests;
 			sourceTree = "<group>";
 		};
-		02E835D41B5C6A9B00180BDE /* Supporting Files */ = {
+		02E836021B5C6AC100180BDE /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				02E835D51B5C6A9B00180BDE /* Info.plist */,
+				02E836031B5C6AC100180BDE /* Info.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -115,60 +115,60 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		02E835BA1B5C6A9B00180BDE /* FunFact */ = {
+		02E835E81B5C6AC100180BDE /* FindFact */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 02E835DA1B5C6A9B00180BDE /* Build configuration list for PBXNativeTarget "FunFact" */;
+			buildConfigurationList = 02E836081B5C6AC100180BDE /* Build configuration list for PBXNativeTarget "FindFact" */;
 			buildPhases = (
-				02E835B71B5C6A9B00180BDE /* Sources */,
-				02E835B81B5C6A9B00180BDE /* Frameworks */,
-				02E835B91B5C6A9B00180BDE /* Resources */,
+				02E835E51B5C6AC100180BDE /* Sources */,
+				02E835E61B5C6AC100180BDE /* Frameworks */,
+				02E835E71B5C6AC100180BDE /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = FunFact;
-			productName = FunFact;
-			productReference = 02E835BB1B5C6A9B00180BDE /* FunFact.app */;
+			name = FindFact;
+			productName = FindFact;
+			productReference = 02E835E91B5C6AC100180BDE /* FindFact.app */;
 			productType = "com.apple.product-type.application";
 		};
-		02E835CF1B5C6A9B00180BDE /* FunFactTests */ = {
+		02E835FD1B5C6AC100180BDE /* FindFactTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 02E835DD1B5C6A9B00180BDE /* Build configuration list for PBXNativeTarget "FunFactTests" */;
+			buildConfigurationList = 02E8360B1B5C6AC100180BDE /* Build configuration list for PBXNativeTarget "FindFactTests" */;
 			buildPhases = (
-				02E835CC1B5C6A9B00180BDE /* Sources */,
-				02E835CD1B5C6A9B00180BDE /* Frameworks */,
-				02E835CE1B5C6A9B00180BDE /* Resources */,
+				02E835FA1B5C6AC100180BDE /* Sources */,
+				02E835FB1B5C6AC100180BDE /* Frameworks */,
+				02E835FC1B5C6AC100180BDE /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				02E835D21B5C6A9B00180BDE /* PBXTargetDependency */,
+				02E836001B5C6AC100180BDE /* PBXTargetDependency */,
 			);
-			name = FunFactTests;
-			productName = FunFactTests;
-			productReference = 02E835D01B5C6A9B00180BDE /* FunFactTests.xctest */;
+			name = FindFactTests;
+			productName = FindFactTests;
+			productReference = 02E835FE1B5C6AC100180BDE /* FindFactTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		02E835B31B5C6A9B00180BDE /* Project object */ = {
+		02E835E11B5C6AC100180BDE /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0640;
 				ORGANIZATIONNAME = "Corey Dutson";
 				TargetAttributes = {
-					02E835BA1B5C6A9B00180BDE = {
+					02E835E81B5C6AC100180BDE = {
 						CreatedOnToolsVersion = 6.4;
 					};
-					02E835CF1B5C6A9B00180BDE = {
+					02E835FD1B5C6AC100180BDE = {
 						CreatedOnToolsVersion = 6.4;
-						TestTargetID = 02E835BA1B5C6A9B00180BDE;
+						TestTargetID = 02E835E81B5C6AC100180BDE;
 					};
 				};
 			};
-			buildConfigurationList = 02E835B61B5C6A9B00180BDE /* Build configuration list for PBXProject "FunFact" */;
+			buildConfigurationList = 02E835E41B5C6AC100180BDE /* Build configuration list for PBXProject "FindFact" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -176,29 +176,29 @@
 				en,
 				Base,
 			);
-			mainGroup = 02E835B21B5C6A9B00180BDE;
-			productRefGroup = 02E835BC1B5C6A9B00180BDE /* Products */;
+			mainGroup = 02E835E01B5C6AC100180BDE;
+			productRefGroup = 02E835EA1B5C6AC100180BDE /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				02E835BA1B5C6A9B00180BDE /* FunFact */,
-				02E835CF1B5C6A9B00180BDE /* FunFactTests */,
+				02E835E81B5C6AC100180BDE /* FindFact */,
+				02E835FD1B5C6AC100180BDE /* FindFactTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		02E835B91B5C6A9B00180BDE /* Resources */ = {
+		02E835E71B5C6AC100180BDE /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				02E835C61B5C6A9B00180BDE /* Main.storyboard in Resources */,
-				02E835CB1B5C6A9B00180BDE /* LaunchScreen.xib in Resources */,
-				02E835C81B5C6A9B00180BDE /* Images.xcassets in Resources */,
+				02E835F41B5C6AC100180BDE /* Main.storyboard in Resources */,
+				02E835F91B5C6AC100180BDE /* LaunchScreen.xib in Resources */,
+				02E835F61B5C6AC100180BDE /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		02E835CE1B5C6A9B00180BDE /* Resources */ = {
+		02E835FC1B5C6AC100180BDE /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -208,46 +208,46 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		02E835B71B5C6A9B00180BDE /* Sources */ = {
+		02E835E51B5C6AC100180BDE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				02E835C31B5C6A9B00180BDE /* ViewController.swift in Sources */,
-				02E835C11B5C6A9B00180BDE /* AppDelegate.swift in Sources */,
+				02E835F11B5C6AC100180BDE /* ViewController.swift in Sources */,
+				02E835EF1B5C6AC100180BDE /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		02E835CC1B5C6A9B00180BDE /* Sources */ = {
+		02E835FA1B5C6AC100180BDE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				02E835D71B5C6A9B00180BDE /* FunFactTests.swift in Sources */,
+				02E836051B5C6AC100180BDE /* FindFactTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		02E835D21B5C6A9B00180BDE /* PBXTargetDependency */ = {
+		02E836001B5C6AC100180BDE /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 02E835BA1B5C6A9B00180BDE /* FunFact */;
-			targetProxy = 02E835D11B5C6A9B00180BDE /* PBXContainerItemProxy */;
+			target = 02E835E81B5C6AC100180BDE /* FindFact */;
+			targetProxy = 02E835FF1B5C6AC100180BDE /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		02E835C41B5C6A9B00180BDE /* Main.storyboard */ = {
+		02E835F21B5C6AC100180BDE /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				02E835C51B5C6A9B00180BDE /* Base */,
+				02E835F31B5C6AC100180BDE /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		02E835C91B5C6A9B00180BDE /* LaunchScreen.xib */ = {
+		02E835F71B5C6AC100180BDE /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
-				02E835CA1B5C6A9B00180BDE /* Base */,
+				02E835F81B5C6AC100180BDE /* Base */,
 			);
 			name = LaunchScreen.xib;
 			sourceTree = "<group>";
@@ -255,7 +255,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		02E835D81B5C6A9B00180BDE /* Debug */ = {
+		02E836061B5C6AC100180BDE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -299,7 +299,7 @@
 			};
 			name = Debug;
 		};
-		02E835D91B5C6A9B00180BDE /* Release */ = {
+		02E836071B5C6AC100180BDE /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -336,27 +336,27 @@
 			};
 			name = Release;
 		};
-		02E835DB1B5C6A9B00180BDE /* Debug */ = {
+		02E836091B5C6AC100180BDE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = FunFact/Info.plist;
+				INFOPLIST_FILE = FindFact/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
 		};
-		02E835DC1B5C6A9B00180BDE /* Release */ = {
+		02E8360A1B5C6AC100180BDE /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = FunFact/Info.plist;
+				INFOPLIST_FILE = FindFact/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
 		};
-		02E835DE1B5C6A9B00180BDE /* Debug */ = {
+		02E8360C1B5C6AC100180BDE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -368,14 +368,14 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = FunFactTests/Info.plist;
+				INFOPLIST_FILE = FindFactTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FunFact.app/FunFact";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FindFact.app/FindFact";
 			};
 			name = Debug;
 		};
-		02E835DF1B5C6A9B00180BDE /* Release */ = {
+		02E8360D1B5C6AC100180BDE /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -383,42 +383,42 @@
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = FunFactTests/Info.plist;
+				INFOPLIST_FILE = FindFactTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FunFact.app/FunFact";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FindFact.app/FindFact";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		02E835B61B5C6A9B00180BDE /* Build configuration list for PBXProject "FunFact" */ = {
+		02E835E41B5C6AC100180BDE /* Build configuration list for PBXProject "FindFact" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				02E835D81B5C6A9B00180BDE /* Debug */,
-				02E835D91B5C6A9B00180BDE /* Release */,
+				02E836061B5C6AC100180BDE /* Debug */,
+				02E836071B5C6AC100180BDE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		02E835DA1B5C6A9B00180BDE /* Build configuration list for PBXNativeTarget "FunFact" */ = {
+		02E836081B5C6AC100180BDE /* Build configuration list for PBXNativeTarget "FindFact" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				02E835DB1B5C6A9B00180BDE /* Debug */,
-				02E835DC1B5C6A9B00180BDE /* Release */,
+				02E836091B5C6AC100180BDE /* Debug */,
+				02E8360A1B5C6AC100180BDE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
-		02E835DD1B5C6A9B00180BDE /* Build configuration list for PBXNativeTarget "FunFactTests" */ = {
+		02E8360B1B5C6AC100180BDE /* Build configuration list for PBXNativeTarget "FindFactTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				02E835DE1B5C6A9B00180BDE /* Debug */,
-				02E835DF1B5C6A9B00180BDE /* Release */,
+				02E8360C1B5C6AC100180BDE /* Debug */,
+				02E8360D1B5C6AC100180BDE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 02E835B31B5C6A9B00180BDE /* Project object */;
+	rootObject = 02E835E11B5C6AC100180BDE /* Project object */;
 }
