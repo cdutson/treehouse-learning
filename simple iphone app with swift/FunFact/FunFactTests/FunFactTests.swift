@@ -1,6 +1,6 @@
 //
-//  FindFactTests.swift
-//  FindFactTests
+//  FunFactTests.swift
+//  FunFactTests
 //
 //  Created by Corey Dutson on 2015-07-19.
 //  Copyright (c) 2015 Corey Dutson. All rights reserved.
@@ -9,7 +9,7 @@
 import UIKit
 import XCTest
 
-class FindFactTests: XCTestCase {
+class FunFactTests: XCTestCase {
     
     override func setUp() {
         super.setUp()

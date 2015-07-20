@@ -1,6 +1,6 @@
 //
 //  AppDelegate.swift
-//  FindFact
+//  FunFact
 //
 //  Created by Corey Dutson on 2015-07-19.
 //  Copyright (c) 2015 Corey Dutson. All rights reserved.

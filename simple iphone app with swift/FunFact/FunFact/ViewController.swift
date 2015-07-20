@@ -1,6 +1,6 @@
 //
 //  ViewController.swift
-//  FindFact
+//  FunFact
 //
 //  Created by Corey Dutson on 2015-07-19.
 //  Copyright (c) 2015 Corey Dutson. All rights reserved.
@@ -10,6 +10,8 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var funFactLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -20,6 +22,9 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    @IBAction func showFunFact() {
+        funFactLabel.text = "You pressed me!"
+    }
 
 }
 
