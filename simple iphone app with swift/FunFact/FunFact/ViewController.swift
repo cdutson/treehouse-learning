@@ -11,10 +11,15 @@ import UIKit
 class ViewController: UIViewController {
 
     @IBOutlet weak var funFactLabel: UILabel!
+    @IBOutlet weak var funFactButton: UIButton!
+
+    let factBook = FactBook()
+    let colourWheel = ColourWheel()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        funFactLabel.text = factBook.randomFact()
     }
 
     override func didReceiveMemoryWarning() {
@@ -23,8 +28,10 @@ class ViewController: UIViewController {
     }
 
     @IBAction func showFunFact() {
-        funFactLabel.text = "You pressed me!"
+        funFactLabel.text = factBook.randomFact()
+        var newColour = colourWheel.RandomColour()
+        view.backgroundColor = newColour
+        funFactButton.tintColor = newColour
     }
-
 }
 
