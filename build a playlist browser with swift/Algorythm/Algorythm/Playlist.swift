@@ -21,8 +21,8 @@ struct Playlist {
         let musicLibrary = MusicLibrary().library
         let playlistDictionary = musicLibrary[index]
         
-        title = playlistDictionary["title"] as! String
-        description = playlistDictionary["description"] as! String
+        title = (playlistDictionary["title"] as! String)
+        description = (playlistDictionary["description"] as! String)
         
         let iconName = playlistDictionary["icon"] as! String
         icon = UIImage(named: iconName)
