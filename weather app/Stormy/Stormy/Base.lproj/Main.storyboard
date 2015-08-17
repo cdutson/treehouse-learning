@@ -72,8 +72,8 @@
                     </view>
                     <connections>
                         <outlet property="currentHumidityLabel" destination="6It-Dz-obG" id="S5C-cl-ARs"/>
-                        <outlet property="currentPercipitationLabel" destination="7vO-5P-Vlk" id="je0-0Z-pKK"/>
-                        <outlet property="currentTempratureLabel" destination="WLf-07-miZ" id="ZUq-f0-vLi"/>
+                        <outlet property="currentPrecipitationLabel" destination="7vO-5P-Vlk" id="15m-Uq-zDO"/>
+                        <outlet property="currentTemperatureLabel" destination="WLf-07-miZ" id="fWR-US-Aky"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>

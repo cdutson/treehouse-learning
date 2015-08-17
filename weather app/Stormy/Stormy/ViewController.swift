@@ -10,35 +10,38 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    @IBOutlet weak var currentTempratureLabel: UILabel?
-    @IBOutlet weak var currentHumidityLabel: UILabel?
-    @IBOutlet weak var currentPercipitationLabel: UILabel?
-    
-    private let forecastAPIKey = "Nope lol"
 
+    @IBOutlet weak var currentTemperatureLabel: UILabel?
+    @IBOutlet weak var currentHumidityLabel: UILabel?
+    @IBOutlet weak var currentPrecipitationLabel: UILabel?
+
+    
+    private let forecastAPIKey = "7ad12f0a5da52a78796365cbf1e6d457"
+    let coordinate: (lat: Double, long: Double) = (37.8267, -122.423)
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        let baseURL = NSURL(string: "https://api.forecast.io/forecast/\(forecastAPIKey)/")
-        let forecastURL = NSURL(string: "37.8267,-122.423", relativeToURL: baseURL)
-        
-        // dat aobj to fetch weather data
-        //let weatherData = NSData(contentsOfURL: forecastURL!, options: nil, error: nil) -- bad
-        
-        //use nsurlsession to fetch data
-        let configuration = NSURLSessionConfiguration.defaultSessionConfiguration()
-        let session = NSURLSession(configuration: configuration)
-        
-        // request obj
-        let request = NSURLRequest(URL: forecastURL!)
-        let dataTask = session.dataTaskWithRequest(request, completionHandler: { (data: NSData!, response: NSURLResponse!, error: NSError!) -> Void in
-            println(data)
-        })
-        
-        // This creates an async call with a callback (as shown above)
-        dataTask.resume()
+        let forecastService = ForecastService(APIKey: forecastAPIKey)
+        forecastService.getForecast(coordinate.lat, long: coordinate.long) {
+            (let currently) in
+            if let currentWeather = currently {
+                // update ui
+                dispatch_async(dispatch_get_main_queue()) {
+                    // execute closure
+                    if let temperature = currentWeather.temperature {
+                        self.currentTemperatureLabel?.text = "\(temperature)º"
+                    }
+                    if let humidity = currentWeather.humidity {
+                        self.currentHumidityLabel?.text = "\(humidity)%"
+                    }
+                    if let precipitation = currentWeather.precipProbability{
+                        self.currentPrecipitationLabel?.text = "\(precipitation)%"
+                    }
+                }
+            }
+        }
     }
 
     override func didReceiveMemoryWarning() {
@@ -49,4 +52,3 @@ class ViewController: UIViewController {
     
     
 }
-
