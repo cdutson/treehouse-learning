@@ -8,13 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		0204E7181B802D1C008A460B /* NetworkOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0204E7171B802D1C008A460B /* NetworkOperation.swift */; };
+		02180CD21B857728008AD549 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02180CD11B857728008AD549 /* CoreLocation.framework */; };
 		022BE88B1B703CAE002F2E0F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 022BE88A1B703CAE002F2E0F /* AppDelegate.swift */; };
 		022BE88D1B703CAE002F2E0F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 022BE88C1B703CAE002F2E0F /* ViewController.swift */; };
 		022BE8901B703CAE002F2E0F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 022BE88E1B703CAE002F2E0F /* Main.storyboard */; };
 		022BE8921B703CAE002F2E0F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 022BE8911B703CAE002F2E0F /* Images.xcassets */; };
 		022BE8951B703CAE002F2E0F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 022BE8931B703CAE002F2E0F /* LaunchScreen.xib */; };
 		022BE8A11B703CAE002F2E0F /* StormyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 022BE8A01B703CAE002F2E0F /* StormyTests.swift */; };
-		022BE8AD1B703E72002F2E0F /* CurrentWeather.plist in Resources */ = {isa = PBXBuildFile; fileRef = 022BE8AC1B703E72002F2E0F /* CurrentWeather.plist */; };
 		022BE8AF1B70400E002F2E0F /* CurrentWeather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 022BE8AE1B70400E002F2E0F /* CurrentWeather.swift */; };
 		02FC75D51B8188C10089538F /* ForecastService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02FC75D41B8188C10089538F /* ForecastService.swift */; };
 /* End PBXBuildFile section */
@@ -31,6 +31,7 @@
 
 /* Begin PBXFileReference section */
 		0204E7171B802D1C008A460B /* NetworkOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkOperation.swift; sourceTree = "<group>"; };
+		02180CD11B857728008AD549 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		022BE8851B703CAE002F2E0F /* Stormy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Stormy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		022BE8891B703CAE002F2E0F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		022BE88A1B703CAE002F2E0F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -41,7 +42,6 @@
 		022BE89A1B703CAE002F2E0F /* StormyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StormyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		022BE89F1B703CAE002F2E0F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		022BE8A01B703CAE002F2E0F /* StormyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StormyTests.swift; sourceTree = "<group>"; };
-		022BE8AC1B703E72002F2E0F /* CurrentWeather.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = CurrentWeather.plist; sourceTree = "<group>"; };
 		022BE8AE1B70400E002F2E0F /* CurrentWeather.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrentWeather.swift; sourceTree = "<group>"; };
 		02FC75D41B8188C10089538F /* ForecastService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForecastService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -51,6 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				02180CD21B857728008AD549 /* CoreLocation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -67,6 +68,7 @@
 		022BE87C1B703CAE002F2E0F = {
 			isa = PBXGroup;
 			children = (
+				02180CD11B857728008AD549 /* CoreLocation.framework */,
 				022BE8871B703CAE002F2E0F /* Stormy */,
 				022BE89D1B703CAE002F2E0F /* StormyTests */,
 				022BE8861B703CAE002F2E0F /* Products */,
@@ -88,12 +90,12 @@
 				022BE88A1B703CAE002F2E0F /* AppDelegate.swift */,
 				022BE88C1B703CAE002F2E0F /* ViewController.swift */,
 				022BE8AE1B70400E002F2E0F /* CurrentWeather.swift */,
+				02FC75D41B8188C10089538F /* ForecastService.swift */,
+				0204E7171B802D1C008A460B /* NetworkOperation.swift */,
 				022BE88E1B703CAE002F2E0F /* Main.storyboard */,
 				022BE8911B703CAE002F2E0F /* Images.xcassets */,
 				022BE8931B703CAE002F2E0F /* LaunchScreen.xib */,
 				022BE8881B703CAE002F2E0F /* Supporting Files */,
-				0204E7171B802D1C008A460B /* NetworkOperation.swift */,
-				02FC75D41B8188C10089538F /* ForecastService.swift */,
 			);
 			path = Stormy;
 			sourceTree = "<group>";
@@ -102,7 +104,6 @@
 			isa = PBXGroup;
 			children = (
 				022BE8891B703CAE002F2E0F /* Info.plist */,
-				022BE8AC1B703E72002F2E0F /* CurrentWeather.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -206,7 +207,6 @@
 			files = (
 				022BE8901B703CAE002F2E0F /* Main.storyboard in Resources */,
 				022BE8951B703CAE002F2E0F /* LaunchScreen.xib in Resources */,
-				022BE8AD1B703E72002F2E0F /* CurrentWeather.plist in Resources */,
 				022BE8921B703CAE002F2E0F /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
