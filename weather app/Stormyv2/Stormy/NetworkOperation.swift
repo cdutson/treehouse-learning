@@ -33,15 +33,20 @@ class NetworkOperation {
                 // if successful, create JSON object with response data
                 switch(httpResponse.statusCode) {
                 case 200:
-                    let jsonDictionary = NSJSONSerialization.JSONObjectWithData(data, options: nil, error: nil) as? [String: AnyObject]
-                    completion(jsonDictionary)
+                    do {
+                        let jsonDictionary = try NSJSONSerialization.JSONObjectWithData(data!, options: NSJSONReadingOptions.AllowFragments) as? [String: AnyObject]
+                        completion(jsonDictionary)
+                    } catch {
+                        // swallow error for now
+                        print(error)
+                    }
                 default:
                     // TODO: do.. something here
-                    println("GET not successful, code: \(httpResponse.statusCode) returned")
+                    print("GET not successful, code: \(httpResponse.statusCode) returned")
                 }
             } else {
                 // TODO: do.. something here
-                println(" response was bad")
+                print(" response was bad")
             }
         }
         
