@@ -17,7 +17,7 @@ class WeeklyTableTableViewController: UITableViewController, CLLocationManagerDe
     @IBOutlet weak var currentTemperatureRangeLabel: UILabel?
     @IBOutlet weak var currentLocationLabel: UILabel?
     
-    private let forecastAPIKey = "NOPE"
+    private let forecastAPIKey = "LOLNOPE"
     var coordinate: (lat: Double, long: Double) = (37.8267, -122.423)
     var locManager:CLLocationManager!
     var locationStatus: String = ""
@@ -42,11 +42,26 @@ class WeeklyTableTableViewController: UITableViewController, CLLocationManagerDe
         // Dispose of any resources that can be recreated.
     }
 
+    // MARK: - Navigation
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "showDaily" {
+            if let indexPath = tableView.indexPathForSelectedRow{
+                let dailyWeather = weeklyWeather[indexPath.row]
+                (segue.destinationViewController as! ViewController).dailyWeather = dailyWeather
+            }
+        }
+    }
+    
     // MARK: - Table view data source
 
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         // Return the number of sections.
         return 1
+    }
+    
+    override func tableView(tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        return "Forcast"
     }
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -56,16 +71,23 @@ class WeeklyTableTableViewController: UITableViewController, CLLocationManagerDe
     }
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("WeatherCell")!
+        let cell = tableView.dequeueReusableCellWithIdentifier("WeatherCell") as! DailyWeatherTableViewCell
         
         let dailyWeather = weeklyWeather[indexPath.row]
-        cell.textLabel?.text = dailyWeather.day
+        if let maxTemp = dailyWeather.maxTemperature {
+            cell.temperatureLabel.text = "\(maxTemp)º"
+        }
+        cell.weatherIcon.image = dailyWeather.icon
+        cell.dayLabel.text = dailyWeather.day
         
         return cell
     }
     
     func configureView() {
         tableView.backgroundView = BackgroundView()
+        
+        // set height for row
+        tableView.rowHeight = 64
         
         // change navbar text/weight/etc
         if let navBarFont = UIFont(name: "HelveticaNeue-Thin", size: 20.0) {
@@ -75,7 +97,38 @@ class WeeklyTableTableViewController: UITableViewController, CLLocationManagerDe
             ]
             navigationController?.navigationBar.titleTextAttributes = navBarAttributesDictionary
         }
+        
+        // position refresh control above background view
+        refreshControl?.layer.zPosition = tableView.backgroundView!.layer.zPosition + 1
+        refreshControl?.tintColor = UIColor.whiteColor()
     }
+    
+    @IBAction func refreshWeather() {
+        retrieveWeatherForecast()
+        refreshControl?.endRefreshing()
+    }
+    
+    
+    // MARK: - Deligate Methods
+    
+    override func tableView(tableView: UITableView, willDisplayHeaderView view: UIView, forSection section: Int) {
+        view.tintColor = UIColor(red: 170/255.0, green: 131/255.0, blue: 224/255.0, alpha: 1.0)
+        
+        if let header = view as? UITableViewHeaderFooterView {
+            header.textLabel!.font = UIFont(name: "HelveticaNeue-Thin", size: 14.0)
+            header.textLabel?.textColor = UIColor.whiteColor()
+            
+        }
+    }
+    
+    override func tableView(tableView: UITableView, didHighlightRowAtIndexPath indexPath: NSIndexPath) {
+        let cell = tableView.cellForRowAtIndexPath(indexPath)
+        cell?.contentView.backgroundColor = UIColor(red: 165/255.0, green: 142/255.0, blue: 203/255.0, alpha: 1.0)
+        let highlightView = UIView()
+        highlightView.backgroundColor = UIColor(red: 165/255.0, green: 142/255.0, blue: 203/255.0, alpha: 1.0)
+        cell?.selectedBackgroundView = highlightView
+    }
+    
     // MARK: - Weather Fetching
     
     func retrieveWeatherForecast() {
